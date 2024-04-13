@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise-1</title>
+    <style>
+        div{width:400px;
+        height:200px;
+        border:2px solid black}
+        #sum_of, #average{
+            color: blue;
+            font-size: 14px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <div>
+        <p id="subject_1"></p>
+        <p id="subject_2"></p>
+        <p id="subject_3"></p>
+        <hr>
+        <p id="sum_of"></p>
+        <p id="average"></p>
+    </div>
+
+</center>
+
+<script>
+    let a = parseFloat(prompt('vat ly:'))
+    let b = parseFloat(prompt('hoa hoc:'))
+    let c = parseFloat(prompt('sinh hoc:'))
+    let x = a+b+c;
+    let y = x/3;
+    document.getElementById("subject_1").innerHTML='Vat Ly: '+a;
+    document.getElementById("subject_2").innerHTML='Hoa hoc: '+b;
+    document.getElementById("subject_3").innerHTML='Sinh hoc: '+c;
+    document.getElementById("sum_of").innerHTML='Tong diem: '+x;
+    document.getElementById("average").innerHTML='Diem trung binh: '+y;
+
+    // document.write('vat ly:'+a+'<br>');
+    // document.write('hoa hoc:'+b+'<br>');
+    // document.write('sinh hoc:'+c+'<br>'+'<hr>');
+    // document.write('Tong diem:'+x+'<br>')
+    // document.write('Diem trung binh:'+y)
+</script>
+</body>
+</html>
